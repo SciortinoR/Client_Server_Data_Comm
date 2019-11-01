@@ -4,6 +4,9 @@ from flask import Flask, make_response, request
 
 from json import dumps, loads
 
+from RFW import RFW
+from RFD import RFD
+
 # Setup Flask server
 server = Flask(__name__)
 api = Api(server)
