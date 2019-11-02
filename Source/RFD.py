@@ -19,7 +19,8 @@ class RFD:
     def protobuf_serialize(self, obj):
         obj.rfw_id = self.rfw_id
         obj.last_batch_id = self.last_batch_id
-        obj.samples = self.samples
+        for k, v in self.samples.items():
+            obj.samples[k].batchSamples.extend(v)
 
     def protobuf_deserialize(self, obj):
         self.rfw_id = obj.rfw_id

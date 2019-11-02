@@ -55,6 +55,12 @@ class ProtoBufResponseForData(Resource):
 
         # Serialize RFD to ProtoBuf RFD
         rfd.protobuf_serialize(pb_rfd)
+        
+        # Print Serialized ProtoBuf RFD before sending (for proof)
+        print("RFW ID: ", pb_rfd.rfw_id)
+        print("Last Batch ID: ", pb_rfd.last_batch_id)
+        for k, v in pb_rfd.samples.items():
+            print(k, v.batchSamples)
 
         # Send response
         response = make_response(pb_rfd.SerializeToString())
