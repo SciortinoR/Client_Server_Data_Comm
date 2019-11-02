@@ -7,7 +7,7 @@ class RFD:
     def json_serialize(self):
         return {
             'RFW_ID' : self.rfw_id,
-            'Last_BatCh_ID' : self.last_batch_id,
+            'Last_Batch_ID' : self.last_batch_id,
             'Samples_Requested' : self.samples
         }
 
