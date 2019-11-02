@@ -15,3 +15,13 @@ class RFD:
         self.rfw_id = obj['RFW_ID']
         self.last_batch_id = obj['Last_Batch_ID']
         self.samples = obj['Samples_Requested']
+
+    def protobuf_serialize(self, obj):
+        obj.rfw_id = self.rfw_id
+        obj.last_batch_id = self.last_batch_id
+        obj.samples = self.samples
+
+    def protobuf_deserialize(self, obj):
+        self.rfw_id = obj.rfw_id
+        self.last_batch_id = obj.last_batch_id
+        self.samples = obj.samples
