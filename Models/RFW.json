@@ -1,8 +1,8 @@
 {
-    "ID": "value",
-    "Benchmark_Type" : "value",
-    "Workload_Metric" : "value",
-    "Batch_Unit" : "value",
-    "Batch_ID" : "value",
-    "Batch_Size" : "value"
+    "ID": 1,
+    "Benchmark_Type" : "DVD Test",
+    "Workload_Metric" : "CPUUtilization_Average",
+    "Batch_Unit" : 5,
+    "Batch_ID" : 1,
+    "Batch_Size" : 4
 }

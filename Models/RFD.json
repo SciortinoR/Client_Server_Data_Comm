@@ -1,5 +1,10 @@
 {
-    "RFW_ID" : "value",
-    "Last_BatCh_ID" : "value",
-    "Samples_Requested" : "value"
+    "RFW_ID" : 1,
+    "Last_BatCh_ID" : 4,
+    "Samples_Requested" : {
+        "Batch 1" : [62, 65, 66, 66, 66],
+        "Batch 2" : [65, 64, 61, 57, 52],
+        "Batch 3" : [46, 42, 40, 40, 43],
+        "Batch 4" : [46, 48, 47, 44, 38]
+    }
 }

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message BatchSamples {
+    repeated int32 batchSamples = 1;
+}
+
+message ProtoBufRFD {
+    int32 rfw_id = 1;
+    int32 last_batch_id = 2;
+    map<string, BatchSamples> samples = 3;
+}

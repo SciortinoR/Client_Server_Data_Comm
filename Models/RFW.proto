@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message ProtoBufRFW {
+    int32 id = 1;
+    string bm_type = 2;
+    string wl_metric = 3;
+    int32 batch_unit = 4;
+    int32 batch_id = 5;
+    int32 batch_size = 6;
+}
