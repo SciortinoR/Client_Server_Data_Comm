@@ -10,13 +10,13 @@ def process_rfw(rfw, rfd):
 
     # Determine which dataset to access
     if rfw.bm_type == "DVD Test":
-        dataset_path = "../Datasets/DVD-testing.csv"
+        dataset_path = "Datasets/DVD-testing.csv"
     elif rfw.bm_type == "DVD Train":
-        dataset_path = "../Datasets/DVD-training.csv"
+        dataset_path = "Datasets/DVD-training.csv"
     elif rfw.bm_type == "NDBench Test":
-        dataset_path == "../Datasets/NDBench-testing.csv"
+        dataset_path == "Datasets/NDBench-testing.csv"
     elif rfw.bm_type == "NDBench Train":
-        dataset_path == "../Datasets/NDBench-testing.csv"
+        dataset_path == "Datasets/NDBench-testing.csv"
     else:
         print("Error: Unrecognized Benchmark Type")
 

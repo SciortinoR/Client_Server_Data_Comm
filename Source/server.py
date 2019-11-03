@@ -72,4 +72,4 @@ api.add_resource(JSONResponseForData, '/json_rfd')
 api.add_resource(ProtoBufResponseForData, '/protobuf_rfd')
 
 if __name__ == '__main__':
-    server.run(debug=True)
+    server.run(host="0.0.0.0", port=int("5000"), debug=True)
